@@ -98,15 +98,4 @@ Example Output:
 Total Tasks: 20
 Completed Tasks: 8
 In Progress: 6
-Blocked: 2
-Pending: 4
 ```
-
----
-
-## Non-Functional Requirements
-
-* The application should follow a modular architecture.
-* Core business logic should be covered with unit tests.
-* The project should include API documentation.
-* A CI pipeline should automatically build and run tests.
