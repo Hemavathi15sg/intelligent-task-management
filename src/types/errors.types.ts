@@ -11,7 +11,8 @@ export class ApiError extends Error {
   ) {
     super(message);
     this.name = 'ApiError';
-    Object.setPrototypeOf(this, ApiError.prototype);
+    // Use new.target.prototype so that subclass instanceof checks work correctly.
+    Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 

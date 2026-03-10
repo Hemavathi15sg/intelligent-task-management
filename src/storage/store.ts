@@ -32,6 +32,10 @@ export class InMemoryStore {
 
   private initializeTables(): void {
     this.data.set('users', new Map());
+    this.data.set('tasks', new Map());
+    this.data.set('task_dependencies', new Map());
+    this.data.set('task_history', new Map());
+    this.data.set('assignment_history', new Map());
   }
 
   /**
